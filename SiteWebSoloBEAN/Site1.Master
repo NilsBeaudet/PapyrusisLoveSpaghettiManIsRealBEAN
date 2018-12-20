@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SiteWebSoloBEAN.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="headercss">
+                <asp:button class="headercontent" ID="Information" runat="server" Text="Information" OnClick="Information_Click"/>
+                <asp:button class="headercontent" ID="Rencontre" runat="server" Text="Rencontre" OnClick="Rencontre_Click"/>
+                <asp:button class="headercontent" ID="Donnée" runat="server" Text="Donnée" OnClick="Donnée_Click"/>
+                <asp:button class="headercontent" ID="Visuel" runat="server" Text="Visuel" OnClick="Visuel_Click"/>
+                <asp:button class="headercontent" ID="btnRetour" runat="server" Text="Retour" OnClick="btnRetour_Click"/>
+            </div>
+            <div class="backgroundcolorlog">
+            <asp:ContentPlaceHolder ID="Introduction" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PhotoPapy" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ConRencontre" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

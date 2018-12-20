@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="SiteWebSoloBEAN.Site2" MasterPageFile="~/Site1.Master"%>
+
+<asp:Content ID="MasterMaster" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="gauche">
+        
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="imagespag" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image1" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image2" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image3" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image4" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image5" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image6" Width="100%" />
+        <asp:Image runat="server" ImageUrl="~/PaSpag.jpg" id="image7" Width="100%" />
+    </div>
+    <div class="backgroundcolorlog">
+    <asp:ContentPlaceHolder ID="ConRencontre" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Visuel" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="Donnée" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
